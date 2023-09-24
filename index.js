@@ -23,7 +23,7 @@ const myReduce = (collection, callback, acc) => {
     return acc
 }
 
-function myFind(collection, predicate) {
+const myFind = (collection, predicate) => {
     for (const element in collection) {
         if (predicate(collection[element])) {
             return collection[element];
